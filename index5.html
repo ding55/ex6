@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>重阳节</title>
+		<style>			
+			#main {							
+				width: 100%;
+				min-width: 500px;
+				zoom: 1;	
+				background-color:aliceblue;			
+			}
+			.head{
+				width:100%;
+				height:216px;
+				
+			}
+			.head img{
+				width:100%;
+				height:100%;
+			}
+			.mainDiv{
+				width:100%;
+				
+				display:flex;
+			}
+			.div1{
+				width:400px;
+				height:650px;
+				margin:20px 5px;
+				border:5px solid gold;
+				position: relative;
+			    overflow: hidden;
+			}	
+			.div1 img{
+				position: absolute;
+			    width: 400px;
+			    height: 650px;
+				cursor: pointer;
+				transition: all 0.5s ease;
+			}
+			#imgOne{
+				left: 0px;
+			}
+			#imgTwo{
+				left:-400px;
+			}
+			
+			.div2{
+				width:100%;
+				height:48px;
+				background-color: orange;
+				text-align:center;
+				font-size:18px;
+			}	
+			.div3{
+				width:930px;
+				height:655px;
+				margin:20px 5px;
+				border:7px solid gold;
+				background-color: orange;
+				overflow: auto;
+			}
+			.div4{
+				width:120px;
+				height:660px;
+				margin:20px 10px;
+				background-color: gold;
+			}
+			span{
+				width:110px;
+				height:310px;
+				display:flex;
+				margin:10px 5px;
+				border:5px;
+				background-color: orange;
+				justify-content:center;
+				align-items: center;
+				font-size:24px;
+			}
+		</style>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<script type="text/javascript">
+		function showImg(){
+		    var imgOne = document.getElementById('imgOne');
+			var imgTwo = document.getElementById('imgTwo');
+			imgOne.style.left = '400px';
+			imgTwo.style.left = '0px';
+		}
+
+		function hideImg(){
+			var imgOne = document.getElementById('imgOne');
+			var imgTwo = document.getElementById('imgTwo');
+			imgOne.style.left = '0px';
+			imgTwo.style.left = '-400px';
+		}
+		</script>
+	</head>
+
+	<body>
+		<div id="main">
+		<div class="head">
+			<img src="res/bg24.png" alt="">
+		</div>
+			<div class="div2">
+			<h1><b>重 阳 节</b></h1>
+			</div>
+			<div class="mainDiv">
+			<div class="div1">
+		      <img onmousemove="showImg()" id="imgOne" src="res/bg25.png">
+		      <img onmouseout="hideImg()" id="imgTwo" src="res/bg26.png">
+		  </div>
+		  <div class="div3">
+		  	<p>
+		  		重九，是传统节日重阳节的别称，九月初九，二九相重，称为“重九”。九九归真，一元肇始，古<br/><br/></br/>
+		  		人认为九九重阳是吉祥的日子。重阳节延续年代久远，汉代是南北风俗习惯融合时期，主要的传统节日<br/><br/></br/>
+		  		都已经普及到全国，早在汉代的文献里重阳习俗已被文人提及。而到了魏晋以后，各种野史、笔记中对<br/><br/></br/>
+		  		重阳节的记载相当丰富，可以说重阳节在当时已盛行于广大民间。此后则历代沿袭。<br/><br/>
+		  	</p>
+		  	<p>
+		  		有研究认为，往上追溯，重阳节的原型之一是古代对“大火”的祭祀。作为古代季节星宿标志的大<br/><br/></br/>
+		  		火星，在季秋九月隐退，而火神的休眠，意味着漫漫长冬的到来。因此，人们在这个时节举行祭祀仪式<br/><br/></br/>
+		  		来为之送行。重阳节的“九”，是阳中之阳，九月九，两个“九”相遇，按《易经》中的六十四卦说，<br/><br/></br/>
+		  		每卦六爻，爻分阴阳，阴爻是六，阳爻是九，九月九是两个九，所以叫重阳。九月九日，两九相重，故<br/><br/></br/>
+		  		而称重阳，也称重九。重九的源头，可追溯到先秦之前。《季秋纪》载：“(九月)命家宰，农事备收，<br/><br/></br/>
+		  		举五种之要。藏帝籍之收于神仓，祗敬必饬。”“是日也，大飨帝，尝牺牲，告备于天子。”可见当时<br/><br/></br/>
+		  		已有在秋九月农作物丰收之时祭飨天帝、祭祖，以谢天帝、祖先恩德的活动。古人认为是个值得庆贺的<br/><br/></br/>
+		  		吉利日子，并且从很早就开始过此节日。九九重阳，九九与“久久”同音，自然容易被赋予长久长寿的<br/><br/><br/>
+		  		含义。<br/><br/>
+		  	</p>
+		  	<p>
+		  		据史料考证，重九节始于远古时期，成型于春秋战国，普及于西汉，鼎盛于唐代以后。到了唐代，<br/><br/></br/>
+		  		重阳被正式定为民间的节日，此后历朝历代沿袭。明董其昌《袁伯应诗集序》：“客岁重九，余既为袁<br/><br/></br/>
+		  		公伯应（袁可立子）制仪小引，以专门名家相勗矣。”描述岁岁重阳是一个自然规律，谁也无法阻挡，<br/><br/></br/>
+		  		同时又表达了尊老爱老的中华美德。
+		  	</p>
+		  </div>
+		  <div class="div4">
+		  	  <span><a href="index5-content.html"><b><i>节日相关</i></b></a></span>
+		  	  <span><a href="index.html"><b><i>返回首页</i></b></a></span>
+		  </div>
+		   </div>
+		</div>
+		
+	</body>
+</html>
+

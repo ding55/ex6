@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>七夕节</title>
+		<style>			
+			#main {							
+				width: 100%;
+				min-width: 500px;
+				zoom: 1;	
+				background-color:aliceblue;			
+			}
+			.head{
+				width:100%;
+				height:216px;
+				
+			}
+			.head img{
+				width:100%;
+				height:100%;
+			}
+			.mainDiv{
+				width:100%;
+				
+				display:flex;
+			}
+			.div1{
+				width:400px;
+				height:650px;
+				margin:20px 5px;
+				border:5px solid pink;
+				position: relative;
+			    overflow: hidden;
+			}	
+			.div1 img{
+				position: absolute;
+			    width: 400px;
+			    height: 650px;
+				cursor: pointer;
+				transition: all 0.5s ease;
+			}
+			#imgOne{
+				left: 0px;
+			}
+			#imgTwo{
+				left:-400px;
+			}
+			
+			.div2{
+				width:100%;
+				height:48px;
+				background-color: paleturquoise;
+				text-align:center;
+				font-size:18px;
+			}	
+			.div3{
+				width:930px;
+				height:655px;
+				margin:20px 5px;
+				border:7px solid papayawhip;
+				background-color: lavenderblush;
+				overflow:auto;
+
+			}
+			.div4{
+				width:120px;
+				height:660px;
+				margin:20px 10px;
+				background-color: #EEE;
+			}
+			span{
+				width:110px;
+				height:310px;
+				display:flex;
+				margin:10px 5px;
+				border:5px;
+				background-color: pink;
+				justify-content:center;
+				align-items: center;
+				font-size:24px;
+			}
+		</style>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<script type="text/javascript">
+		function showImg(){
+		    var imgOne = document.getElementById('imgOne');
+			var imgTwo = document.getElementById('imgTwo');
+			imgOne.style.left = '400px';
+			imgTwo.style.left = '0px';
+		}
+
+		function hideImg(){
+			var imgOne = document.getElementById('imgOne');
+			var imgTwo = document.getElementById('imgTwo');
+			imgOne.style.left = '0px';
+			imgTwo.style.left = '-400px';
+		}
+		</script>
+	</head>
+
+	<body>
+		<div id="main">
+		<div class="head">
+			<img src="res/bg9.png" alt="">
+		</div>
+			<div class="div2">
+			<h1><b>七 夕 节</b></h1>
+			</div>
+			<div class="mainDiv">
+			<div class="div1">
+		      <img onmousemove="showImg()" id="imgOne" src="res/bg11.png">
+		      <img onmouseout="hideImg()" id="imgTwo" src="res/bg14.png">
+		  </div>
+		  <div class="div3">
+		  	<p>七夕节，又称七巧节、七姐节、女儿节、乞巧节、七娘会、七夕祭 、牛公牛婆日、巧夕等，是中国民<br/><br/><br/>
+		  		间的传统节日。七夕节由星宿崇拜演化而来，为传统意义上的七姐诞，因拜祭“七姐”活动在七月七晩上<br/><br/><br/>
+		  		举行，故名“七夕”。拜七姐，祈福许愿、乞求巧艺、坐看牵牛织女星、祈祷姻缘、储七夕水等，是七夕<br/><br/><br/>
+		  		的传统习俗。经历史发展，七夕被赋予了“牛郎织女”的美丽爱情传说，使其成为了象征爱情的节日，从<br/><br/><br/>
+		  		而被认为是中国最具浪漫色彩的传统节日，在当代更是产生了“中国情人节”的文化含义。<br/><br/></p>
+		  	<p>七夕节既是拜祭七姐的节日，也是爱情的节日，是一个以“牛郎织女”民间传说为载体，以祈福、乞<br/><br/><br/>
+		  		巧、爱情为主题，以女性为主体的综合性节日。七夕的“牛郎织女”来源于人们对自然天象的崇拜，上古<br/><br/><br/>
+		  		时代人们将天文星区与地理区域相互对应，这个对应关系就天文来说，称作“分星”，就地理来说，称<br/><br/><br/>
+		  		作“分野”。相传每年七月初七，牛郎织女会于天上的鹊桥相会。<br/><br/></p>
+		  		<p>七夕节起始于上古，普及于西汉，鼎盛于宋代。在七夕的众多民俗当中，有些逐渐消失，但还有相当<br/><br/><br/>
+		  			一部分被人们延续了下来。七夕节发源于中国，在部分受中华文化影响的亚洲国家如日本、朝鲜半岛、越<br/><br/><br/>
+		  			南等也有庆祝七夕的传统。2006年5月20日，七夕节被中华人民共和国国务院列入第一批国家级非物质文<br/><br/><br/>
+		  			化遗产名录。</p>
+		  </div>
+		  <div class="div4">
+		  	  <span><a href="index3-content.html"><b><i>节日相关</i></b></a></span>
+		  	  <span><a href="index.html"><b><i>返回首页</i></b></a></span>
+		  </div>
+		   </div>
+		</div>
+		
+	</body>
+</html>

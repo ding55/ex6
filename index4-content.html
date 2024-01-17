@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>春节相关</title>
+		<style>
+			#main {							
+				width: 70%;
+				min-width: 500px;
+				zoom:1;		
+				margin-left:15%;	
+				background-image:url("res/bg21.png");
+				background-size: cover;
+			}
+			.p1{
+				font-size:18px;
+				text-align: 2 em;
+				line-height: 18px;
+			}
+			.mainDiv1{
+				width:90%;
+				height: 35%;
+				display: flex;
+				margin-left:5%;
+				margin-top:5%;
+				margin-right:5%;
+				margin-bottom:3%;
+
+			}
+			.mainDiv2{
+				width:90%;
+				height: 35%;
+				display:flex;
+				margin-left:5%;
+				margin-right:5%;
+			}
+			.div1{
+				width:100%;
+				height:15%;
+				background-color: indianred;
+				text-align: center;
+			}
+			.div2{
+				width:280px;
+				height:330px;
+				margin-right:5%;
+				overflow:hidden;
+			}
+			#img{
+				width:280px;
+				height: 330px;
+				transition: all 0.5s ease;
+			}
+			.div3{
+				width:570px;
+				height:330px;
+				border:5px solid gold;
+				background-color: indianred;
+				overflow-x:auto;
+			}
+			.div4{
+				width:280px;
+				height:330px;
+			}
+			.div4 img{
+				width:100%;
+				height: 100%;
+			}
+			.div5{
+				width:570px;
+				height:330px;
+				margin-right: 5%;
+				border:5px solid gold;
+				overflow-y: auto;
+				background-color: indianred;
+			}
+			
+
+		</style>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+		<script type="text/javascript">
+      function change(){
+        $("#img").css('transform','scale(1.1)');
+      }
+
+     function reset(){
+         $("#img").css('transform','scale(1)');
+     }
+     function changeDiv(){
+     	$("#chu").html("");
+     	$("#chu").append("<p>横批：吉星高照</p>");
+		$("#chu").append("<p>一帆风顺年年好 万事如意步步高</p>");
+		$("#chu").append("<p>横批：迎春接福</>");
+		$("#chu").append("<p>财连亨通步步高 日子红火腾腾起</p>");
+     	$("#chu").append("<p>横批：万象更新</p>");
+     	$("#chu").append("<p>和顺一门有百福 平安二字值千金</p>");
+     	$("#chu").append("<p>横批：国泰民安</p>");
+     	$("#chu").append("<p>百年天地回元气 一统山河际太平</p>");
+     	$("#chu").append("<p>横批：合家欢乐</p>");
+     	$("#chu").append("<p>欢声笑语贺新春 欢聚一堂迎新年</p>");
+     	$("#chu").append("<p>横批：四季平安</p>");
+     	$("#chu").append("<p>天地和顺家添财 平安如意人多福</p>");
+     }
+    </script>
+	</head>
+
+	<body>
+		<div id="main">
+			
+			<div class="div1">
+				<br/>
+			<h1 style="font-size: 50px">春节习俗及故事</h1><br/><br/>
+    			<a href="index4.html">返回上一页</a>
+    		</div>
+    		<div class="mainDiv1">
+    		<div class="div2">
+    			<img src="res/bg22.png" id="img" onmouseover="change()" onmouseout="reset()"/>
+    		</div>
+    		<div class="div3" id="chu">
+    			<p class="p1" ><b>1、年的故事</b><br/>相传古时候有一种叫“年”的怪兽，长的青面獠牙、尖角利爪，凶恶无比。年长年深居山中，
+    				每到除夕才下山吞食牲畜伤害人命。因此，每到除夕这天，家家户户人们都离家躲避年兽的伤害，把这个称为“过年”。
+					某年除夕，人们正扶老携幼上山避难，从村外来了个乞讨的老人。人们有的封窗锁门，有的收拾行装，
+					到处一片匆忙恐慌景象，没有人关心这乞讨的老人，只有村东头一位老妇包了饺子请老人吃，劝他快上山
+					躲避年兽。为了报答老妇的好心，老人告诉她年最怕红色、火光和炸响，要她穿红衣，在门上张贴红纸、
+					点上红烛，在院内燃烧竹子发出炸响。
+					半夜时分，年兽闯进村。发现村中灯火通明，它的双眼因刺目的红色睁不开，又听到有人家传来
+					响亮的爆竹声，于是浑身战栗的逃走了。从此人们知道了赶走年的方法，每年除夕家家贴红对联、
+					燃放爆竹；户户烛火通明、守更待岁。初一一大早，还要走亲串友道喜问好，恭贺对方渡过了年兽
+					的肆虐。后来这风俗越传越广，成了民间最隆重的传统节日。</p>
+					<input type="button" value="想看看春联吗" onclick="changeDiv()">
+    		</div>
+    		</div>
+    		<div class="mainDiv2">
+    			<div class="div5">
+    				<p class="p1"><b>1、买年货</b><br/>
+中国的年俗文化源远流长，全国各地衍生出纷繁多样的过年习俗，南北迥异，各具特色。虽然各地习俗不尽相同，但是备年货、
+送年礼却是几乎全国上下的“过年必备”。置办年货，包括吃的、穿的、戴的、用的、贴的（年红）、送的（拜年）礼物等等，
+统名曰之“年货”，而把采购年货的过程称之为“办年货”。办年货是中国人过春节的一项重要活动。
+</p>
+<p class="p1"><b>2、祭灶</b><br/>
+民间祭灶，源于古人拜火习俗。如《释名》中说：“灶。造也，创食物也。”灶神的职责就是执掌灶火，管理饮食，后来扩大为
+考察人间善恶，以降福祸。祭灶在中国民间有几千年历史了，灶神信仰是中国百姓对“衣食有余”梦想追求的反映。
+</p>
+<p class="p1"><b>3、扫尘</b><br/>
+在民间，新年前夕有“腊月二十四，扫尘（亦称扫屋）的习俗。民谚称“二十四，扫房子”。民间称做“扫尘日”。扫尘就是年终
+大扫除，家家户户都要打扫环境，清洗各种器具，拆洗被褥窗帘，洒扫六闾庭院，掸拂尘垢蛛网，疏浚明渠暗沟。
+、干干净净迎新春的欢乐气氛。按民间的说法：因“尘”与“陈”谐音，年前扫尘有“除陈布新”的涵义。扫尘用意是要把一切
+穷运、晦气统统扫出门，以祈来年清吉。
+</p>
+<p class="p1"><b>4、贴年红</b><br/>
+年廿八、廿九或三十日家家户户“贴年红”（年红是春联、门神、年画、福字、横批、窗花等的统称，因这些是过年时
+贴的红色喜庆元素，所以统称为“年红”）。贴年红是中华传统过年习俗，它反映了人民大众的风俗和信仰，增添喜庆的
+节日气氛，并寄予着人们对新年新生活的美好期盼
+</p>
+<p class="p1"><b>5、年夜饭</b><br/>
+年夜饭，又称年晚饭、团年饭等，特指岁末除夕的阖家聚餐。年夜饭源于古代的年终祭祀仪，拜祭神灵与祖先后团圆
+聚餐。年夜饭是年前的重头戏，不但丰富多彩，而且很讲究意头。吃团年饭前先拜神祭祖，待拜祭仪式完毕后才开饭。
+席上一般有鸡（寓意有计）、鱼（寓意年年有余）、蚝豉（寓意好市）、发菜（寓意发财）、腐竹（寓意富足）、
+莲藕（寓意聪明）、生菜（寓意生财）、腊肠（寓意长久）等以求吉利。中国人的年夜饭是家人的团圆聚餐，
+这顿是年尾最丰盛、最重要的一顿晚餐。	
+</p>
+<p class="p1"><b>6、压岁钱</b><br/>
+压岁钱，年俗之一，年晚饭后长辈要将事先准备好的压岁钱派发给晚辈，据说压岁钱可以压住邪祟，晚辈得到
+压岁钱就可以平平安安度过一岁。压岁钱在民俗文化中寓意辟邪驱鬼，保佑平安。压岁钱最初的用意是镇恶驱
+邪。因为人们认为小孩容易受鬼祟的侵害，所以用压岁钱压祟驱邪。	
+</p>
+
+		
+    			</div>
+    			<div class="div4">
+    				<img src="res/bg23.png"/>
+    			</div>
+    		</div>
+		</div>
+	</body>
+</html>
